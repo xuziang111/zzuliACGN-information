@@ -1,0 +1,22 @@
+#body-container,#tf-home,#overly{
+    min-width:1200px;
+}
+.tab-bar{
+    position: fixed;
+    top:150px;
+    left:10px;
+    
+}
+.page-content{
+    margin-left:100px;
+    border:1px solid white;
+    display: flex;
+}
+.left-side{
+    width:680px;
+    border:1px solid red;
+}
+.right-side{
+    width:260px;
+    border:1px solid green;
+}
