@@ -4,17 +4,23 @@
 .tab-bar{
     position: fixed;
     top:150px;
-    left:10px;
-    
+    left:20px;
+}
+.tab-bar ul li{
+    padding:10px 0;
+}
+.tab-bar ul li i{
+padding-right:10px;
 }
 .page-content{
-    margin-left:100px;
+    margin-left:180px;
     border:1px solid white;
     display: flex;
 }
 .left-side{
     width:680px;
     border:1px solid red;
+    margin-right:30px;
 }
 .right-side{
     width:260px;
@@ -30,4 +36,8 @@ width:680px;
 } */
 #top-carousel img{
     width:100%;
+}
+.right-side ul li{
+    display:flex;
+    justify-content: space-around;
 }
