@@ -1,5 +1,5 @@
 (function(){
 new Vue({
-    el:'#app',
+    // el:'#app',
 })
 })()

@@ -20,6 +20,14 @@
     width:260px;
     border:1px solid green;
 }
-#carousel-example-generic{
+#top-carousel{
     width:680px;
+    height:212px;
+    overflow: hidden;
+}
+/* #top-carousel .carousel-inner .item{
+width:680px;
+} */
+#top-carousel img{
+    width:100%;
 }
