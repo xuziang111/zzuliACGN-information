@@ -49,3 +49,24 @@ width:680px;
     display:flex;
     justify-content: space-around;
 }
+.article{
+    border:1px solid yellow;
+    display:flex;
+    justify-content: space-around;
+}
+.article-tittle{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.article>.article-left>p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.article-left{
+    width:550px;
+}
+.article-right{
+    width:120px;
+}
