@@ -13,7 +13,9 @@
 padding-right:10px;
 }
 .page-content{
-    margin-left:180px;
+    margin:0 auto;
+    width:1000px;
+    /* padding-left:100px; */
     border:1px solid white;
     display: flex;
 }
@@ -51,8 +53,12 @@ width:680px;
 }
 .article{
     border:1px solid yellow;
+    border-radius:3px;
+    background:rgba(255,255,255,0.2);
     display:flex;
     justify-content: space-around;
+    margin-bottom:10px;
+    padding:5px;
 }
 .article-tittle{
     overflow: hidden;
@@ -69,4 +75,7 @@ width:680px;
 }
 .article-right{
     width:120px;
+}
+.article-inf>span{
+    padding-right:5px;
 }
