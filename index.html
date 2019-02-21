@@ -104,85 +104,86 @@
             <!--在此处编辑你的HTML代码,详情了解Boostrap栅格系统-->
             <div class="">
                 <!-- 左侧栏需要用js调整初始离顶部距离 -->
-                <main class="page-content">
-                        <aside class="tab-bar">
-                                <ul>
-                                  <li><a href="#"><i class="fa fa-2x fa-gamepad"></i>推荐</a></li>
-                                  <li><i>图标</i><a href="#">动画</a></li>  
-                                  <li><i>图标</i><a href="#">游戏</a></li>  
-                                  <li><i>图标</i><a href="#">影视</a></li>  
-                                  <li><i>图标</i><a href="#">游戏</a></li>  
-                                  <li><i>图标</i><a href="#">科技</a></li>   
-                                </ul>
-                            </aside>
-                    <div class="left-side">
-                        <div>
-                                <div id="top-carousel" class="carousel slide" data-ride="carousel">
-                                        <!-- Indicators -->
-                                        <ol class="carousel-indicators">
-                                          <li data-target="#top-carousel" data-slide-to="0" class="active"></li>
-                                          <li data-target="#top-carousel" data-slide-to="1"></li>
-                                          <li data-target="#top-carousel" data-slide-to="2"></li>
-                                        </ol>
-                                      
-                                        <!-- Wrapper for slides -->
-                                        <div class="carousel-inner" role="listbox">
-                                          <div class="item active">
-                                            <img src="./Images/66474729_p0.jpg" alt="...">
-                                            <div class="carousel-caption">
-                                              ...
-                                            </div>
-                                          </div>
-                                          <div class="item">
-                                            <img src="./Images/8c007b5cgy1fqwefu5tkrj20xc0nkqv5.jpg" alt="...">
-                                            <div class="carousel-caption">
-                                              ...
-                                            </div>
-                                          </div>
-                                          <div class="item">
-                                                <img src="./Images/8c007b5cly1fkayrbqu9sj216b0ovke1.jpg" alt="...">
-                                                <div class="carousel-caption">
-                                                  ...
-                                                </div>
-                                              </div>
-                                        </div>
-                                      </div>
-                        </div>
-                        <div class="partition-name"><h3>推荐文章</h3></div>
-                        <div class="article-content">
-                            <section class="article">
-                                <div class="article-left">
-                                    <h4 class="article-tittle">xxx</h4>
-                                    <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-                                    <div class="article-inf"><span>来源：xxxxx</span><span>分类</span><span>2019-02-20</span></div>
-                                </div>
-                                <div class="article-right"><img src="/Images/66474729_p0.jpg" width="120" height="90"></div>
-                            </section>
-                            <section class="article">
-                                    <div class="article-left">
-                                        <h4 class="article-tittle">xxx</h4>
-                                        <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-                                        <div class="article-inf"><span>来源：xxxxx</span><span>分类</span><span>2019-02-20</span></div>
-                                    </div>
-                                    <div class="article-right"><img src="/Images/66474729_p0.jpg" width="120" height="90"></div>
-                                </section>
-                            <div>xxxxxx</div>
-                        </div>
-                    </div>
-                    <aside class="right-side">
-                        <div>
-                            <h4>热点</h4>
-                            <hr>
-                            <ul>
-                                <li><a href="#">文章111111111111111</a><span>2-19</span></li>
-                                <li><a href="#">文章2</a><span>2-19</span></li>  
-                                <li><a href="#">文章3</a><span>2-19</span></li>  
-                                <li><a href="#">文章4</a><span>2-19</span></li>  
-                                <li><a href="#">文章5</a><span>2-19</span></li>  
-                                <li><a href="#">文章6</a><span>2-19</span></li>   
-                              </ul>
-                        </div>
+                <aside class="tab-bar">
+                        <ul>
+                          <li><a href="#"><i class="fa fa-2x fa-gamepad"></i>推荐</a></li>
+                          <li><i>图标</i><a href="#">动画</a></li>  
+                          <li><i>图标</i><a href="#">游戏</a></li>  
+                          <li><i>图标</i><a href="#">影视</a></li>  
+                          <li><i>图标</i><a href="#">游戏</a></li>  
+                          <li><i>图标</i><a href="#">科技</a></li>   
+                        </ul>
                     </aside>
+                <main class="page-content">
+                    <router-view></router-view>
+                    <!--<div class="left-side">-->
+                        <!--<div>-->
+                                <!--<div id="top-carousel" class="carousel slide" data-ride="carousel">-->
+                                        <!--&lt;!&ndash; Indicators &ndash;&gt;-->
+                                        <!--<ol class="carousel-indicators">-->
+                                          <!--<li data-target="#top-carousel" data-slide-to="0" class="active"></li>-->
+                                          <!--<li data-target="#top-carousel" data-slide-to="1"></li>-->
+                                          <!--<li data-target="#top-carousel" data-slide-to="2"></li>-->
+                                        <!--</ol>-->
+                                      <!---->
+                                        <!--&lt;!&ndash; Wrapper for slides &ndash;&gt;-->
+                                        <!--<div class="carousel-inner" role="listbox">-->
+                                          <!--<div class="item active">-->
+                                            <!--<img src="./Images/66474729_p0.jpg" alt="...">-->
+                                            <!--<div class="carousel-caption">-->
+                                              <!--...-->
+                                            <!--</div>-->
+                                          <!--</div>-->
+                                          <!--<div class="item">-->
+                                            <!--<img src="./Images/8c007b5cgy1fqwefu5tkrj20xc0nkqv5.jpg" alt="...">-->
+                                            <!--<div class="carousel-caption">-->
+                                              <!--...-->
+                                            <!--</div>-->
+                                          <!--</div>-->
+                                          <!--<div class="item">-->
+                                                <!--<img src="./Images/8c007b5cly1fkayrbqu9sj216b0ovke1.jpg" alt="...">-->
+                                                <!--<div class="carousel-caption">-->
+                                                  <!--...-->
+                                                <!--</div>-->
+                                              <!--</div>-->
+                                        <!--</div>-->
+                                      <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="partition-name"><h3>推荐文章</h3></div>-->
+                        <!--<div class="article-content">-->
+                            <!--<section class="article">-->
+                                <!--<div class="article-left">-->
+                                    <!--<h4 class="article-tittle">xxx</h4>-->
+                                    <!--<p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>-->
+                                    <!--<div class="article-inf"><span>来源：xxxxx</span><span>分类</span><span>2019-02-20</span></div>-->
+                                <!--</div>-->
+                                <!--<div class="article-right"><img src="/Images/66474729_p0.jpg" width="120" height="90"></div>-->
+                            <!--</section>-->
+                            <!--<section class="article">-->
+                                    <!--<div class="article-left">-->
+                                        <!--<h4 class="article-tittle">xxx</h4>-->
+                                        <!--<p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>-->
+                                        <!--<div class="article-inf"><span>来源：xxxxx</span><span>分类</span><span>2019-02-20</span></div>-->
+                                    <!--</div>-->
+                                    <!--<div class="article-right"><img src="/Images/66474729_p0.jpg" width="120" height="90"></div>-->
+                                <!--</section>-->
+                            <!--<div>xxxxxx</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<aside class="right-side">-->
+                        <!--<div>-->
+                            <!--<h4>热点</h4>-->
+                            <!--<hr>-->
+                            <!--<ul>-->
+                                <!--<li><a href="#">文章111111111111111</a><span>2-19</span></li>-->
+                                <!--<li><a href="#">文章2</a><span>2-19</span></li>  -->
+                                <!--<li><a href="#">文章3</a><span>2-19</span></li>  -->
+                                <!--<li><a href="#">文章4</a><span>2-19</span></li>  -->
+                                <!--<li><a href="#">文章5</a><span>2-19</span></li>  -->
+                                <!--<li><a href="#">文章6</a><span>2-19</span></li>   -->
+                              <!--</ul>-->
+                        <!--</div>-->
+                    <!--</aside>-->
                 </main>
             </div>
         </div>
@@ -217,6 +218,8 @@
 <!--此处追加你要增加的外部JS文件标签，start ↓↓↓↓↓↓↓↓↓-->
 <!--例如：<script type="text/javascript" src="JavaScript/xxx.js"></script>-->
 <script type="text/javascript" src="JavaScript/vendor/vue.js"></script>
+<script type="text/javascript" src="JavaScript/indexvue.js"></script>
+<script type="text/javascript" src="JavaScript/vendor/vue-router.js"></script>
 <script type="text/javascript" src="JavaScript/main.js"></script>
 <!--此处追加你要增加的外部JS文件地址，end   ↑↑↑↑↑↑↑↑↑-->
 <!--*********************************************************************************************-->

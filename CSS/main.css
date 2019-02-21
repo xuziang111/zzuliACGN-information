@@ -12,7 +12,7 @@
 .tab-bar ul li i{
 padding-right:10px;
 }
-.page-content{
+.page-content>div{
     margin:0 auto;
     width:1000px;
     /* padding-left:100px; */
@@ -20,7 +20,7 @@ padding-right:10px;
     display: flex;
 }
 .left-side{
-    width:680px;
+    width:682px;
     border:1px solid red;
     margin-right:30px;
 }
@@ -40,6 +40,7 @@ padding-right:10px;
     width:680px;
     height:212px;
     overflow: hidden;
+    border-radius:3px;
 }
 /* #top-carousel .carousel-inner .item{
 width:680px;
