@@ -14,6 +14,7 @@
     <!-- Bootstrap -->
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/element-ui/2.5.4/theme-chalk/index.css" rel="stylesheet">
     <!--BaseCSS-->
     <link href="CSS/templateBase.css" rel="stylesheet">
     <link href="CSS/main.css" rel="stylesheet">
@@ -115,7 +116,7 @@
                         </ul>
                     </aside>
                 <main class="page-content">
-                    <router-view></router-view>
+                    <router-view @loadindeximg="ajaxstart" :indexdata="index"></router-view>
                     <!--<div class="left-side">-->
                         <!--<div>-->
                                 <!--<div id="top-carousel" class="carousel slide" data-ride="carousel">-->
@@ -218,6 +219,8 @@
 <!--此处追加你要增加的外部JS文件标签，start ↓↓↓↓↓↓↓↓↓-->
 <!--例如：<script type="text/javascript" src="JavaScript/xxx.js"></script>-->
 <script type="text/javascript" src="JavaScript/vendor/vue.js"></script>
+<script src="https://cdn.bootcss.com/element-ui/2.5.4/index.js"></script>
+<script src="https://cdn.bootcss.com/element-ui/2.5.4/locale/zh-CN.js"></script>
 <script type="text/javascript" src="JavaScript/indexvue.js"></script>
 <script type="text/javascript" src="JavaScript/vendor/vue-router.js"></script>
 <script type="text/javascript" src="JavaScript/main.js"></script>

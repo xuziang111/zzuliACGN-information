@@ -36,24 +36,34 @@
         el:'#body-container',
         router,
         data:{
-            pagestate:{
+                hot:[{href:'#',title:'东京动画奖2019”年度最佳动画作品奖与个人奖结果发表',date:'2019-2-21'}],
                 index:{
-                    data:{
-                        timeline:[],
-                        newanimeindex:[],
-                        pastanimeindex:[],
-                        ovaindex:[],
+                        indeximg:[{img:'',href:''},],
+                        article:[{title:'',img:'',abstract:'',date:'',source:'',type:''}],
+                        hot:[{href:'#',title:'loading...',date:'loading...'}]
                     },
-                    num:0
-                },
+
                 newanime:{data:{},num:0},
                 pastanime:{data:{},num:0},
                 movie:0,
-            },
         },
         methods:{
+            ajaxstart:function (e){
+                let _temp = this
+                $.ajax({
+                    type:'get',
+                    url: `${e.page}/${e.part}`,
+                    success: function(data){
+                        _temp.ajaxsuccess(data)
+                    },
+                    error:function(){
 
-
+                    },
+                });
+            },
+            ajaxsuccess:function(data){
+                this[data.page][data.part] = data.data
+            }
         },
     }).$mount('#body-container')
 

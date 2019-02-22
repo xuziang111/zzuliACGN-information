@@ -36,6 +36,11 @@ padding-right:10px;
     width:260px;
     border:1px solid green;
 }
+#top-carousel h3{
+    position:absolute;
+    bottom:0px;
+    left:5px;
+}
 #top-carousel{
     width:680px;
     height:212px;
@@ -56,17 +61,23 @@ width:680px;
     border:1px solid yellow;
     border-radius:3px;
     background:rgba(255,255,255,0.2);
-    display:flex;
-    justify-content: space-around;
     margin-bottom:10px;
     padding:5px;
+}
+.article:hover{
+    background:rgba(255,255,255,0.4);
+}
+.article a{
+    display:block;
+    display:flex;
+    justify-content: space-around;
 }
 .article-tittle{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.article>.article-left>p{
+.article>a>.article-left>p{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -79,4 +90,14 @@ width:680px;
 }
 .article-inf>span{
     padding-right:5px;
+}
+.right-side ul li{
+    width:255px;
+}
+.right-side ul li a{
+    width:180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display:block;
 }
