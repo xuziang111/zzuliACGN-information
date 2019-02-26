@@ -16,12 +16,12 @@ padding-right:10px;
     margin:0 auto;
     width:1000px;
     /* padding-left:100px; */
-    border:1px solid white;
+    /*border:1px solid white;*/
     display: flex;
 }
 .left-side{
     width:682px;
-    border:1px solid red;
+    /*border:1px solid red;*/
     margin-right:30px;
 }
 .partition-name >h3{
@@ -34,7 +34,10 @@ padding-right:10px;
 }
 .right-side{
     width:260px;
-    border:1px solid green;
+    border-radius:3px;
+    padding:5px;
+    background:rgba(255,255,255,0.2);
+    /*border:1px solid green;*/
 }
 #top-carousel h3{
     position:absolute;
@@ -57,8 +60,21 @@ width:680px;
     display:flex;
     justify-content: space-around;
 }
+.right-side ul li:hover{
+    background:rgba(255,255,255,0.2);
+}
+.right-side ul li{
+    width:250px;
+}
+.right-side ul li a{
+    width:180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display:block;
+}
 .article{
-    border:1px solid yellow;
+    /*border:1px solid yellow;*/
     border-radius:3px;
     background:rgba(255,255,255,0.2);
     margin-bottom:10px;
@@ -91,21 +107,10 @@ width:680px;
 .article-inf>span{
     padding-right:5px;
 }
-.right-side ul li{
-    width:255px;
-}
-.right-side ul li a{
-    width:180px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    display:block;
-}
-/* text-indent:2em*/
-.article{
+.articles{
     text-indent:2em;
     padding:10px;
 }
-.article h1{
+.articles h1{
     text-align: center;
 }

@@ -1,7 +1,7 @@
 let articles = Vue.component('articles',{
     props:[],
     template:`
-    <div v-html="content" class="article">
+    <div v-html="content" class="articles>
 
     </div>
     `,
