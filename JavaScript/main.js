@@ -36,7 +36,7 @@
         router,
         data:{
             index:'',
-                ifcreated:{index:0,anime:0},
+                ifcreated:{index:0,anime:0,hot:0},
             pagedatas:{
                 index:{
                     indeximg:[{img:'./Images/66474729_p0.jpg',href:'#',abstract:'ccc',},

@@ -118,18 +118,7 @@
                 <main class="page-content">
                     <div>
                     <router-view @loadpage="ajaxstart" :ifcreated="ifcreated" :pagedata="pagedatas"></router-view>
-                    <aside class="right-side">
-                        <div>
-                            <h4>热点</h4>
-                            <hr>
-                            <ul>
-                                <li v-for="(item,index) in pagedatas.index.hot">
-                                    <a :href="item.href">{{item.title}}</a><span>{{item.date}}</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </aside>
-                    </div>
+                    <hot @loadpage="ajaxstart" :ifcreated="ifcreated" :pagedata="pagedatas"></hot>
                     <!--<div class="left-side">-->
                         <!--<div>-->
                                 <!--<div id="top-carousel" class="carousel slide" data-ride="carousel">-->
@@ -198,7 +187,9 @@
                               <!--</ul>-->
                         <!--</div>-->
                     <!--</aside>-->
+                    </div>
                 </main>
+                <img src="https://images.dmzj.com/resource/news/2019/02/21/1550718754686032.jpg">
             </div>
         </div>
     </div>
@@ -237,6 +228,7 @@
 <script type="text/javascript" src="JavaScript/indexvue.js"></script>
 <script type="text/javascript" src="JavaScript/anime.js"></script>
 <script type="text/javascript" src="JavaScript/vendor/vue-router.js"></script>
+<script type="text/javascript" src="JavaScript/hot.js"></script>
 <script type="text/javascript" src="JavaScript/main.js"></script>
 <!--此处追加你要增加的外部JS文件地址，end   ↑↑↑↑↑↑↑↑↑-->
 <!--*********************************************************************************************-->
