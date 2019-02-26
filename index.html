@@ -107,8 +107,8 @@
                 <!-- 左侧栏需要用js调整初始离顶部距离 -->
                 <aside class="tab-bar">
                         <ul>
-                          <li><a href="#"><i class="fa fa-2x fa-gamepad"></i>推荐</a></li>
-                          <li><i>图标</i><a href="#">动画</a></li>  
+                          <li><router-link to="/"><i class="fa fa-2x fa-gamepad"></i>推荐</router-link></li>
+                          <li><router-link to="/anime"><i>图标</i>动画</router-link></li>
                           <li><i>图标</i><a href="#">游戏</a></li>  
                           <li><i>图标</i><a href="#">影视</a></li>  
                           <li><i>图标</i><a href="#">游戏</a></li>  
@@ -116,7 +116,20 @@
                         </ul>
                     </aside>
                 <main class="page-content">
-                    <router-view @loadindeximg="ajaxstart" :indexdata="index"></router-view>
+                    <div>
+                    <router-view @loadindeximg="ajaxstart" @loadindearticle="ajaxstart" :ifcreated="ifcreated" :indexdata="index"></router-view>
+                    <aside class="right-side">
+                        <div>
+                            <h4>热点</h4>
+                            <hr>
+                            <ul>
+                                <li v-for="(item,index) in index.hot">
+                                    <a :href="item.href">{{item.title}}</a><span>{{item.date}}</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                    </div>
                     <!--<div class="left-side">-->
                         <!--<div>-->
                                 <!--<div id="top-carousel" class="carousel slide" data-ride="carousel">-->
