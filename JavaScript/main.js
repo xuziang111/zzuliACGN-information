@@ -20,10 +20,11 @@
         leftresize()
       });
 
-    // const anime = { template: '<div>bar</div>' }
+    // const article = { template: '<div>bar</div>' }
     const routes = [
         { path: '/', component:index},
         { path: '/anime', component: anime },
+        { path: '/article/:id', component: articles},
         { path: '*', component: index },
     ]
 
@@ -35,16 +36,15 @@
         el:'#body-container',
         router,
         data:{
-            index:'',
-                ifcreated:{index:0,anime:0,hot:0},
+            ifcreated:{index:0,anime:0,hot:0},
             pagedatas:{
+                hot:{hot:[{href:'#',title:'loading...',date:'loading...'}]},
                 index:{
                     indeximg:[{img:'./Images/66474729_p0.jpg',href:'#',abstract:'ccc',},
                         {img:'./Images/8c007b5cgy1fqwefu5tkrj20xc0nkqv5.jpg',href:'#',abstract:'xxx'},
                         {img:'./Images/8c007b5cly1fkayrbqu9sj216b0ovke1.jpg',href:'#',abstract:"zzz"}
                     ],
-                    article:[{title:'',img:'',abstract:'',date:'',source:'',type:''}],
-                    hot:[{href:'#',title:'loading...',date:'loading...'}]
+                    article:[],
                 },
                 anime:{article:[{title:'',img:'',abstract:'',date:'',source:'',type:''}]}
             },
@@ -72,10 +72,10 @@
             ajaxsuccess:function(data,e){
                 this.pagedatas[e.page][e.part] = data
                 this.ifcreated[e.page]=1
+                console.log(e)
             }
         },
         created:function(){
-            this.ajaxstart({page:'index',part:'hot'})
         }
     }).$mount('#body-container')
 

@@ -101,3 +101,11 @@ width:680px;
     white-space: nowrap;
     display:block;
 }
+/* text-indent:2em*/
+.article{
+    text-indent:2em;
+    padding:10px;
+}
+.article h1{
+    text-align: center;
+}

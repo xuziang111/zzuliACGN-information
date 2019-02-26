@@ -15,13 +15,13 @@ const hot = Vue.component('hot',{
 `,
     data:function(){
         return{
-            page:this.pagedata.index,
+            page:this.pagedata.hot,
         }
     },
     created:function(){
         if(this.ifcreated.hot === 0){
             //修改
-            this.$emit('loadpage',{page:'index',part:'hot'})
+            this.$emit('loadpage',{page:'hot',part:'hot'})
         }
     }
 })
