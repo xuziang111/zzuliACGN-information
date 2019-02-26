@@ -20,8 +20,7 @@
         leftresize()
       });
 
-
-    const anime = { template: '<div>anime</div>' }
+    // const anime = { template: '<div>bar</div>' }
     const routes = [
         { path: '/', component:index},
         { path: '/anime', component: anime },
@@ -36,20 +35,19 @@
         el:'#body-container',
         router,
         data:{
-                ifcreated:{index:0,},
-                hot:[{href:'#',title:'东京动画奖2019”年度最佳动画作品奖与个人奖结果发表',date:'2019-2-21'}],
+            index:'',
+                ifcreated:{index:0,anime:0},
+            pagedatas:{
                 index:{
-                        indeximg:[{img:'./Images/66474729_p0.jpg',href:'#',abstract:'ccc',},
-    {img:'./Images/8c007b5cgy1fqwefu5tkrj20xc0nkqv5.jpg',href:'#',abstract:'xxx'},
-    {img:'./Images/8c007b5cly1fkayrbqu9sj216b0ovke1.jpg',href:'#',abstract:"zzz"}
-                        ],
-                        article:[{title:'',img:'',abstract:'',date:'',source:'',type:''}],
-                        hot:[{href:'#',title:'loading...',date:'loading...'}]
-                    },
-
-                newanime:{data:{},num:0},
-                pastanime:{data:{},num:0},
-                movie:0,
+                    indeximg:[{img:'./Images/66474729_p0.jpg',href:'#',abstract:'ccc',},
+                        {img:'./Images/8c007b5cgy1fqwefu5tkrj20xc0nkqv5.jpg',href:'#',abstract:'xxx'},
+                        {img:'./Images/8c007b5cly1fkayrbqu9sj216b0ovke1.jpg',href:'#',abstract:"zzz"}
+                    ],
+                    article:[{title:'',img:'',abstract:'',date:'',source:'',type:''}],
+                    hot:[{href:'#',title:'loading...',date:'loading...'}]
+                },
+                anime:{article:[{title:'',img:'',abstract:'',date:'',source:'',type:''}]}
+            },
         },
         methods:{
             ajaxstart:function (e){
@@ -72,7 +70,7 @@
                 });
             },
             ajaxsuccess:function(data,e){
-                this[e.page][e.part] = data
+                this.pagedatas[e.page][e.part] = data
                 this.ifcreated[e.page]=1
             }
         },

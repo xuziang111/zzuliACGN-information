@@ -117,13 +117,13 @@
                     </aside>
                 <main class="page-content">
                     <div>
-                    <router-view @loadindeximg="ajaxstart" @loadindearticle="ajaxstart" :ifcreated="ifcreated" :indexdata="index"></router-view>
+                    <router-view @loadpage="ajaxstart" :ifcreated="ifcreated" :pagedata="pagedatas"></router-view>
                     <aside class="right-side">
                         <div>
                             <h4>热点</h4>
                             <hr>
                             <ul>
-                                <li v-for="(item,index) in index.hot">
+                                <li v-for="(item,index) in pagedatas.index.hot">
                                     <a :href="item.href">{{item.title}}</a><span>{{item.date}}</span>
                                 </li>
                             </ul>
@@ -235,6 +235,7 @@
 <script src="https://cdn.bootcss.com/element-ui/2.5.4/index.js"></script>
 <script src="https://cdn.bootcss.com/element-ui/2.5.4/locale/zh-CN.js"></script>
 <script type="text/javascript" src="JavaScript/indexvue.js"></script>
+<script type="text/javascript" src="JavaScript/anime.js"></script>
 <script type="text/javascript" src="JavaScript/vendor/vue-router.js"></script>
 <script type="text/javascript" src="JavaScript/main.js"></script>
 <!--此处追加你要增加的外部JS文件地址，end   ↑↑↑↑↑↑↑↑↑-->
