@@ -4,6 +4,10 @@
 #tf-home .overlay{
     min-height:100vh;
 }
+#top-carousel .el-carousel__indicator{
+    padding-top:0;
+    padding-bottom:0;
+    }
 .tab-bar{
     position: fixed;
     top:150px;
