@@ -1,6 +1,9 @@
 #body-container,#tf-home,#overly{
     min-width:1200px;
 }
+#tf-home .overlay{
+    min-height:100vh;
+}
 .tab-bar{
     position: fixed;
     top:150px;
@@ -14,8 +17,8 @@ padding-right:10px;
 }
 .page-content>div{
     margin:0 auto;
-    width:1000px;
-    /* padding-left:100px; */
+    width:1120px;
+    padding-left:150px;
     /*border:1px solid white;*/
     display: flex;
 }
