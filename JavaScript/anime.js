@@ -29,14 +29,14 @@ let anime = Vue.component('anime',{
                 {img:'./Images/8c007b5cly1fkayrbqu9sj216b0ovke1.jpg',href:'#',abstract:"zzz"}
             ],
             article:[],
-            hot:[{href:'#',title:'东京动画奖2019”年度最佳动画作品奖与个人奖结果发表',date:'2019-2-21'}]
+            hot:[]
         }
     },
     created:function(){
         //修改
         if(this.ifcreated.anime === 0){
             //修改
-            this.$emit('loadpage',{page:'anime',part:'article'})
+            this.$emit('loadpage',{page:'anime',part:'article',num:1})
         }
     }
 })
