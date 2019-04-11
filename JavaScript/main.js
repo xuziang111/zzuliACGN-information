@@ -95,9 +95,6 @@
                     this.pagedatas[e.page].num++
                 }
             },
-            checkheight:function(){
-                
-            }
         },
         created:function(){
             let _temp = this
